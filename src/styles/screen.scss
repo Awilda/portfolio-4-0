@@ -1,5 +1,7 @@
 @import 'utility';
 @import 'app';
+@import 'animations';
+$background: url('http://api.thumbr.it/whitenoise-361x370.png?background=202020ff&noise=626262&density=29&opacity=18');
 
 $base-text-size: 16px;
 $base-font-family: sans-serif;
@@ -11,51 +13,84 @@ html {
 body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
-  background-color: #fff;
+  background-color: rgb(249, 242, 201);
 }
 
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
 
-.menu {
-  ul {
-    list-style: none;
-    font-family: Gotham;
+.Menu {
+  display: flex;
+  margin-bottom: 20px;
 
-    li {
-      margin: 20px;
+  .menuBox {
+    width: 310px;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  a {
+    font-family: Courier;
+    text-decoration: none;
+    font-size: 40px;
+    color: #333;
+
+    // .bounce {
+    //   @include animation(bounce 2s infinite);
+    // }
+
+    &:hover {
+      color: rgb(94, 179, 239);
+      // transform: rotate(-90deg);
+      // transition: transform 1s;
+    }
+
+    &:clicked {
+      color: rgb(94, 179, 239);
+      // transform: rotate(180deg);
+      // transition: transform 2s;
     }
   }
 }
 
-.image {
+
+main {
+  // width: 900px;
+  // height: 100%;
   display: flex;
-  width: 600px;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 20px;
+}
 
-  img {
-    height: 300px;
-    position: absolute;
-    z-index: 1;
-    right: 30px;
-    top: 100px;
-  }
-//for media query, take off the (right: 30px)
-// or make right: 0.
+h3 {
+  font-size: 40px;
+  font-family: Josefin Slab;
+  color: rgb(230, 71, 61);
+  padding-bottom: 40px;
+  text-align: center;
+  border-bottom: 2px dashed #333;
+}
 
-  h2 {
-    color: #333;
-    font-family: Bebas;
-    font-size: 40px;
-    position: absolute;
-    z-index: 2;
-    left: 10px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+span {
+  font-family: Josefin Slab;
+  margin: 10px;
+  text-align: center;
+  color: rgb(230, 71, 61);
 }
 
 
-
-
-@media screen and (max-width: 530px) {
-
+//all mobile phones, iPads will be regular.
+@media screen and (max-width: 414px) {
+  body {
+    // background-color: #fff;
+  }
 }

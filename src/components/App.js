@@ -1,20 +1,18 @@
 import React, { Component } from 'react'
+import Menu from './Menu'
+import Main from './Main'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 class App extends Component {
   render () {
-    return <div className='App'>
-      <div className='menu'>
-        <ul>
-          <li> Home </li>
-          <li> Projects </li>
-          <li> Contact </li>
-        </ul>
+    return <Router>
+      <div className='App'>
+        <Menu />
+        <Switch>
+          <Route exact path='/' component={Main} />
+        </Switch>
       </div>
-      <div className='image'>
-        <h2> Carolina de la Fuente </h2>
-        <img src='../albert-dera-245502.jpg' width='500px' />
-      </div>
-    </div>
+    </Router>
   }
 }
 
