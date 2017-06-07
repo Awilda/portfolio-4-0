@@ -1,4 +1,5 @@
 @import 'utility';
+@import 'app';
 
 $base-text-size: 16px;
 $base-font-family: sans-serif;
@@ -10,4 +11,51 @@ html {
 body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
+  background-color: #fff;
+}
+
+
+.menu {
+  ul {
+    list-style: none;
+    font-family: Gotham;
+
+    li {
+      margin: 20px;
+    }
+  }
+}
+
+.image {
+  display: flex;
+  width: 600px;
+  justify-content: center;
+
+  img {
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    top: 100px;
+  }
+//for media query, take off the (right: 30px)
+// or make right: 0.
+
+  h2 {
+    color: #333;
+    font-family: Bebas;
+    font-size: 40px;
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+
+
+
+@media screen and (max-width: 530px) {
+
 }

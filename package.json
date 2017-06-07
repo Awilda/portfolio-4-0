@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "deploy": "yarn build && surge ./public --domain portfolio-4-0.caro.surge.sh",
+    "deploy": "yarn build && surge ./public --domain portfolio-4-0.carodelafuente.surge.sh",
     "start": "webpack-dev-server",
     "prebuild": "rm -f public/index.html public/app-*.js public/vendor-*.js public/screen-*.css",
     "build": "NODE_ENV=production webpack --progress"
@@ -11,6 +11,7 @@
     "babel-core": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.0.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
@@ -35,6 +36,7 @@
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-hot-loader": "next",
+    "react-router-dom": "^4.1.1",
     "redbox-react": "^1.4.0",
     "sass-loader": "^6.0.5",
     "style-loader": "^0.18.2",
