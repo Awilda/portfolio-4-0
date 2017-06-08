@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 
   .projectBox {
     display: flex;
@@ -10,9 +11,14 @@
     flex-direction: column;
     margin: 10px;
 
+    img {
+      // box-shadow: 10px 10px 90px -9px rgba(0,0,0,0.75);
+    }
+
     a {
       text-decoration: none;
       font-family: Josefin Slab;
+      font-size: 14px;
       color: #333;
     }
   }

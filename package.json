@@ -4,6 +4,7 @@
     "deploy": "yarn build && surge ./public --domain portfolio-4-0.carodelafuente.surge.sh",
     "start": "webpack-dev-server",
     "prebuild": "rm -f public/index.html public/app-*.js public/vendor-*.js public/screen-*.css",
+    "postbuild": "cp public/index.html public/200.html",
     "build": "NODE_ENV=production webpack --progress"
   },
   "dependencies": {

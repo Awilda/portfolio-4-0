@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 class Projects extends Component {
   render () {
-    return <div className='Projects'>
+    return <div className='Projects slide'>
       <h3> My Projects </h3>
       <div className='projectBox'>
         <img src='../memory.png' width='300px' />
