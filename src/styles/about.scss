@@ -1,0 +1,22 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: Josefin Slab;
+  color: rgb(230, 71, 61);
+  padding-bottom: 40px;
+  text-align: center;
+  border-bottom: 2px dashed #333;
+}
+
+span {
+  font-family: Josefin Slab;
+  margin: 10px;
+  text-align: center;
+  color: rgb(230, 71, 61);
+}

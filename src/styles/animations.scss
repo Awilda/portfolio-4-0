@@ -14,6 +14,20 @@
   }
 }
 
+.menuShown {
+  animation: menuShown 0.3s ease-in forwards;
+}
+  @keyframes menuShown {
+    0% {
+      transform: translateX(1000px);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+
+
 .bounce {
   animation: bounce 2s ease;
 }
@@ -27,5 +41,14 @@
   }
   80% {
     transform: (translateY(0px));
+  }
+}
+
+.arrow {
+  animation: arrow 0.5s ease forwards;
+}
+@keyframes arrow {
+  100% {
+    transform: rotate(-90deg);
   }
 }

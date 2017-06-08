@@ -1,6 +1,8 @@
 @import 'utility';
-@import 'app';
+@import 'about';
 @import 'animations';
+@import 'contact';
+@import 'projects';
 $background: url('http://api.thumbr.it/whitenoise-361x370.png?background=202020ff&noise=626262&density=29&opacity=18');
 
 $base-text-size: 16px;
@@ -13,7 +15,7 @@ html {
 body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
-  background-color: rgb(249, 242, 201);
+  background-color: rgba(247, 245, 237, 0.3);
 }
 
 .App {
@@ -30,32 +32,34 @@ body {
 
   .menuBox {
     width: 310px;
+    height: auto;
     display: flex;
     justify-content: flex-end;
 
+    .menuShown {
+      width: 300px;
+      a {
+        display: flex;
+        justify-content: space-around;
+        font-size: 11px;
+        text-align: center;
+        padding: 5px;
+        background-color: rgba(230, 71, 61, 0.3);
+      }
+    }
   }
 
   a {
-    font-family: Courier;
+    font-family: Josefin Slab;
     text-decoration: none;
     font-size: 40px;
     color: #333;
 
-    // .bounce {
-    //   @include animation(bounce 2s infinite);
-    // }
 
     &:hover {
-      color: rgb(94, 179, 239);
-      // transform: rotate(-90deg);
-      // transition: transform 1s;
+      color: #333;
     }
 
-    &:clicked {
-      color: rgb(94, 179, 239);
-      // transform: rotate(180deg);
-      // transition: transform 2s;
-    }
   }
 }
 
@@ -67,8 +71,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  margin-top: 20px;
+  // border-radius: 10px;
+  // margin-top: 20px;
 }
 
 h3 {
