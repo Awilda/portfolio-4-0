@@ -12,7 +12,8 @@
     text-decoration: none;
     color: #333;
     &:hover {
-      color: rgb(230, 71, 61)
+      color: rgb(230, 71, 61);
+      border-bottom: 1px dashed #333;
     }
   }
 }
