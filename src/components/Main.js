@@ -5,7 +5,7 @@ class Main extends Component {
     return <main className='Main slide'>
       <h2> Mirza Carolina </h2>
       <img src='../portfolio.png' />
-      <span> A frontend developer who likes to dabble in design. </span>
+      <span className='homepageSpan'> A frontend developer who likes to dabble in design. </span>
     </main>
   }
 }
