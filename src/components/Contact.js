@@ -3,11 +3,10 @@ import React, { Component } from 'react'
 class Contact extends Component {
   render () {
     return <div className='Contact slide'>
-      <h3> Let's Connect. </h3>
-      <a target='_blank' href='mailto:mdela160@fiu.edu'> E-mail </a>
-      <a target='_blank' href='https://github.com/carodelafuente/'> Github </a>
-      <a target='_blank' href='https://vsco.co/gnarvy/images/1'> VSCO </a>
-      <a target='_blank' href='https://medium.com/@mdela160'> Medium </a>
+      <h4>Let's Connect.</h4>
+      <a className="contact_link" target='_blank' href='mailto:dmirzacarolina@gmail.com'> E-mail </a>
+      <a className="contact_link" target='_blank' href='https://github.com/carodelafuente/'> Github </a>
+      <a className="contact_link" target='_blank' href='https://www.instagram.com/ojosnublados/'> Photography IG </a>
     </div>
   }
 }

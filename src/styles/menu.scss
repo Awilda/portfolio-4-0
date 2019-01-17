@@ -1,28 +1,28 @@
-.Menu {
-  display: flex;
-  margin-bottom: 20px;
-
-  .menuBox {
-    width: 310px;
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-
-    .menuShown {
-      width: 300px;
-      a {
-        display: flex;
-        justify-content: space-around;
-        font-size: 11px;
-        text-align: center;
-        padding: 5px;
-        border-bottom: 1px dotted #333;
-        background-color: rgba(230, 71, 61, 0.3);
-
-        &:hover {
-          background-color: rgba(230, 71, 61, 0.5);
-        }
-      }
-    }
-  }
-}
+// .Menu {
+//   display: flex;
+//   margin-bottom: 20px;
+//
+//   .menuBox {
+//     width: 310px;
+//     display: flex;
+//     justify-content: flex-end;
+//     margin-top: 20px;
+//
+//     .menuShown {
+//       width: 300px;
+//       a {
+//         display: flex;
+//         justify-content: space-around;
+//         font-size: 11px;
+//         text-align: center;
+//         padding: 5px;
+//         border-bottom: 1px dotted #333;
+//         background-color: rgba(230, 71, 61, 0.3);
+//
+//         &:hover {
+//           background-color: rgba(230, 71, 61, 0.5);
+//         }
+//       }
+//     }
+//   }
+// }

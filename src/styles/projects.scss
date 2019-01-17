@@ -1,25 +1,29 @@
 .Projects {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // align-items: center;
   margin-bottom: 100px;
+  color: #252525;
+
 
   .projectBox {
     display: flex;
     align-items: center;
-    flex-direction: column;
-    margin: 10px;
 
-    img {
-      // box-shadow: 10px 10px 90px -9px rgba(0,0,0,0.75);
+    @media screen and (max-width: 600px)  {
+      flex-direction: column;
     }
 
-    a {
-      text-decoration: none;
-      font-family: Josefin Slab;
-      font-size: 14px;
-      color: #333;
+    .project_text {
+      a {
+        text-decoration: none;
+        color: #252525;
+        border-bottom: 5px solid transparent;
+        &:hover {
+          border-bottom: 5px solid rgb(37, 10, 82);
+        }
+      }
     }
+
   }
 }
