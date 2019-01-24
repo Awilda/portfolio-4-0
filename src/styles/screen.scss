@@ -1,5 +1,5 @@
 @import 'utility';
-// @import 'about';
+@import 'about';
 // @import 'animations';
 // @import 'contact';
 // @import 'menu';
@@ -109,7 +109,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  width: 65%;
+  width: 50%;
 
   h1 {
     font-family: Nunito;

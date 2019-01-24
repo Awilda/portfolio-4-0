@@ -5,25 +5,43 @@
   margin-bottom: 100px;
   color: #252525;
 
-
-  .projectBox {
+  .projectsContainer {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 600px)  {
+    .projectBox {
+      display: flex;
       flex-direction: column;
-    }
+      align-items: center;
+      justify-content: center;
+      width: 50%;
+      margin: 1rem;
 
-    .project_text {
-      a {
-        text-decoration: none;
-        color: #252525;
-        border-bottom: 5px solid transparent;
-        &:hover {
-          border-bottom: 5px solid rgb(37, 10, 82);
-        }
+      @media screen and (max-width: 600px)  {
+        flex-direction: column;
       }
-    }
 
+      .project_text {
+        line-height: 1.7;
+        font-size: 14px;
+        color: #252525;
+
+        a {
+          text-decoration: none;
+          color: #252525;
+          border-bottom: 5px solid transparent;
+          &:hover {
+            border-bottom: 5px solid rgb(37, 10, 82);
+          }
+        }
+
+
+      }
+
+    }
   }
+
 }
