@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
-import waves from '../../public/WAVES1.png';
+import dandelion from '../../public/dandelion.png';
 
 class Main extends Component {
   render () {
     return <div className='Main'>
     <div className="main_left_container">
-      <h1>Hi, I'm Carolina.</h1>
-      <p>I'm a Front End Developer working at a public relations firm in New York City. I'm curious and passionate about tech, humans, and the internet. I spend my time trying to level up my skills in JavaScript and venturing around town with my film camera.</p>
+      <h1>Awilda Couverthier</h1>
+      <h2>Web Developer</h2>
     </div>
-    <div className ="waves"><img src={waves} alt="waves" /></div>
+    <div className ="dandelion"><img src={dandelion} alt="dandelion" /></div>
     </div>
   }
 }
