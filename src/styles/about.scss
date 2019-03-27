@@ -7,7 +7,11 @@
   .aboutContainer {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    @media screen and (max-width: 1024px)  {
+      justify-content: center;
+    }
 
     .aboutTextContainer {
       display: flex;
@@ -24,6 +28,12 @@
     .aboutImageContainer {
       width: 50%;
       text-align: center;
+      @media screen and (max-width: 1024px)  {
+        width: 100%;
+      }
+      @media screen and (max-width: 600px)  {
+        border-radius: 50%;
+      }
     }
   }
 }

@@ -27,12 +27,18 @@ h1 {
   font-family: $sans_serif_nunito;
   font-weight: bold;
   margin: 0;
+  @media screen and (max-width: 600px)  {
+    font-size: 3.0rem;
+  }
 }
 h2 {
   font-size: 3.0rem;
   font-family: $sans_serif_nunito;
   font-weight: bold;
   margin: 0;
+  @media screen and (max-width: 600px)  {
+    font-size: 2.6rem;
+  }
 }
 h3 {
   font-size: 2.8rem;
@@ -88,19 +94,13 @@ h6 {
         text-decoration: none;
         color: #252525;
       }
-
-      // hr {
-      //   height: 5px;
-      //   background-color: rgb(37, 10, 82);
-      //   border: none;
-      // }
-
     }
   }
 }
 
 .Main {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -126,13 +126,19 @@ h6 {
   }
 }
 
-.waves {
+.dandelion {
   width: 30%;
   align-items: right;
+  @media screen and (max-width: 600px)  {
+    width: 100%;
+  }
 
   img {
     width: 100%;
     height: 100%;
+    @media screen and (max-width: 600px)  {
+      align-items: center;
+    }
   }
 }
 
@@ -157,100 +163,3 @@ h6 {
   }
 }
 
-
-
-// body:before, body:after {
-//     content: "";
-//     position: fixed;
-//     background: rgb(230, 71, 61);
-//     left: 0;
-//     right: 0;
-//     height: 10px;
-// }
-// body:before {
-//     top: 0;
-// }
-// body:after {
-//     bottom: 0;
-// }
-// body {
-//     border-left: 10px solid rgb(230, 71, 61);
-//     border-right: 10px solid rgb(230, 71, 61);
-// }
-
-// .App {
-//   // display: flex;
-//   // justify-content: center;
-//   // align-items: center;
-//   // flex-direction: column;
-//   // margin-top: 50px;
-// }
-
-
-
-  // a {
-  //   font-family: Josefin Slab;
-  //   text-decoration: none;
-  //   font-size: 40px;
-  //   color: #333;
-  //
-  //
-  //   &:hover {
-  //     color: #333;
-  //   }
-  // }
-
-
-
-// main {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//
-//   h2 {
-//     font-size: 40px;
-//     font-family: Josefin Slab;
-//     font-size: 35px;
-//     color: rgb(230, 71, 61);
-//     text-align: center;
-//     margin: 0;
-//     margin-bottom: 30px;
-//   }
-//
-//   img {
-//     margin-bottom: 20px;
-//     width: 310px;
-//     opacity: 0.7;
-//   }
-// }
-
-
-// h3 {
-//   font-size: 40px;
-//   font-family: Josefin Slab;
-//   color: rgb(230, 71, 61);
-//   padding-bottom: 40px;
-//   text-align: center;
-//   border-bottom: 2px dashed #333;
-// }
-
-// span {
-//   font-family: Josefin Slab;
-//   margin: 10px;
-//   text-align: center;
-//   color: rgb(230, 71, 61);
-// }
-//
-// .homepageSpan {
-//   width: 350px;
-//   line-height: 20px;
-// }
-//
-//
-// //all mobile phones, iPads will be regular.
-// @media screen and (max-width: 414px) {
-//   body {
-//     // background-color: #fff;
-//   }
-// }
